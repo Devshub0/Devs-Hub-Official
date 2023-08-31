@@ -1,9 +1,7 @@
---UPDATE!!!!!
-
+--Finale Update!
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
-
 local Window = Rayfield:CreateWindow({
-   Name = "Ninja legnds 2 Finale!",
+   Name = "Ninja legnds 2 script",
    LoadingTitle = "Devshub",
    LoadingSubtitle = "by thesnake",
    ConfigurationSaving = {
