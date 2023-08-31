@@ -1,3 +1,5 @@
+--UPDATE!!!!!
+
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
@@ -50,13 +52,67 @@ local MainSection = MainTab:CreateSection("teloport")
 local Button = MainTab:CreateButton({
    Name = "Planet Zephyr",
    Callback = function()
-        local args = {
-    [1] = "travelToArea",
-    [2] = workspace.areaCircles.areaCircle
-}
+        local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new (-2, 1467, 126) --print (pl.CFrame) to get XYZ
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
 
-game:GetService("ReplicatedStorage").rEvents.areaTravelRemote:InvokeServer(unpack(args))
+pl.CFrame = location
+   end,
+})
 
+local Button = MainTab:CreateButton({
+   Name = "Planet Inferno",
+   Callback = function()
+            local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new (1, 3057, 142) --print (pl.CFrame) to get XYZ
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+
+pl.CFrame = location
+pl.CFrame = location
+   end,
+})
+
+
+local Button = MainTab:CreateButton({
+   Name = "Planet Omega",
+   Callback = function()
+            local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new (1, 4681, 142) --print (pl.CFrame) to get XYZ
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+
+pl.CFrame = location
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Planet Elemental",
+   Callback = function()
+   local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new (52, 6311, 90) --print (pl.CFrame) to get XYZ
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+
+pl.CFrame = location
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Planet Chaos",
+   Callback = function()
+            local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new (1, 8631, 142) --print (pl.CFrame) to get XYZ
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+
+pl.CFrame = location
    end,
 })
 
