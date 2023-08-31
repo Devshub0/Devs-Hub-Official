@@ -3,7 +3,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "Ninja legnds 2 script we are gonna be adding more features",
+   Name = "Ninja legnds 2 Finale!",
    LoadingTitle = "Devshub",
    LoadingSubtitle = "by thesnake",
    ConfigurationSaving = {
